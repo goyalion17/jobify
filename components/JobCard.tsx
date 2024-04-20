@@ -38,7 +38,7 @@ function JobCard({ job }: { job: JobType }) {
       </CardContent>
       <CardFooter className="flex gap-4">
         <Button asChild size="sm">
-          <Link href={`/${job.id}`}>edit</Link>
+          <Link href={`/jobs/${job.id}`}>edit</Link>
         </Button>
         <DeleteJobButton id={job.id} />
       </CardFooter>
