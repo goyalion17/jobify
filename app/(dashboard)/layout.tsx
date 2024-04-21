@@ -1,8 +1,9 @@
-import { PropsWithChildren } from "react";
-import Sidebar from "../../components/Sidebar";
-import Navbar from "../../components/Navbar";
+import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
-const layout = ({ children }: { children: PropsWithChildren }) => {
+import { PropsWithChildren } from "react";
+
+function layout({ children }: PropsWithChildren) {
   return (
     <main className="grid lg:grid-cols-5">
       {/* first-col hide on small screen */}
@@ -16,6 +17,5 @@ const layout = ({ children }: { children: PropsWithChildren }) => {
       </div>
     </main>
   );
-};
-
+}
 export default layout;
