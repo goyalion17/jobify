@@ -155,6 +155,8 @@ export async function getStatsAction(): Promise<{
   interview: number;
   declined: number;
 }> {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+
   const userId = authenticateAndRedirect();
 
   try {
